@@ -13,6 +13,8 @@ Mars 2026 est le mois d'exécution : HIPE-OCRepair publie ses données d'entraî
 
 **Signal majeur du mois :** Le POC ILH est terminé — CER 2,72% vs Nautilus/Kraken 3,68% sans fine-tuning, sur les mêmes images officielles. La porte 1 de la roadmap est franchie.
 
+**Signal de clôture (17 mars) :** Autoresearch (Karpathy) — boucle d'optimisation LLM autonome applicable directement à la distillation Phase 2/3 d'ILH (Qwen3.5-397B → Lux-Heritage-7B sur MeluXina-AI).
+
 ---
 
 ## Axe 1 — IA et patrimoine numérisé
@@ -49,13 +51,11 @@ Calendrier HIPE-OCRepair 2026 vérifié et mis à jour :
 
 Le benchmark couvre anglais, français et allemand, matériaux historiques 17e–20e siècle, journaux et imprimés. Les données d'entraînement (2 mars) sont déjà disponibles sur HuggingFace.
 
-**Mise à jour importante :** La deadline initiale mentionnée dans le bulletin de janvier ("confirmation avant fin mars") était une approximation. Le calendrier officiel montre que la **participation comme dataset provider** est distincte de la participation comme équipe concurrente. Clarification à demander directement aux organisateurs.
-
 **Pertinence BnL :** Le ground truth NautilusOCR BnL (CC0, 6 723 blocs, presse LU 1840–1960, DE/FR/LB) complète les langues couvertes (FR/DE déjà présents). La BnL pourrait contribuer le LB et les données luxembourgeoises manquantes au benchmark — contribution scientifique ET visibilité internationale.
 
 **Action :**
-1. Télécharger les données d'entraînement disponibles depuis le 2 mars : huggingface.co/hipe
-2. Contacter les organisateurs (mail-list corpora@list.elra.info) pour confirmer les modalités de contribution dataset LB
+1. Télécharger les données d'entraînement disponibles depuis le 2 mars
+2. Contacter les organisateurs pour confirmer les modalités de contribution dataset LB
 3. Surveiller le leaderboard HuggingFace qui ouvre le 23 mars
 
 ---
@@ -77,19 +77,47 @@ Le POC ILH (Intelligent Luxembourg Heritage) est réalisé et mesuré le 14 mars
 
 CER 2,72% vs Nautilus/Kraken 3,68% **sans fine-tuning**, sur les mêmes images officielles de référence. Réduction de 34% vs Tesseract. Fraktur : amélioration systématique (3/3 blocs, dont img5 : 25,19% → 2,04%). Coût session complète : 2,01$ via OpenRouter.
 
-**Ce que ce résultat signifie :** La porte G0 (POC zero-shot) est franchie avec marge. Le diagnostic des limites (porte 1 → porte 2) : le VLM montre ses limites sur l'Antiqua déjà bien reconnue (CER < 2%), confirmant l'intérêt d'un triage EPR avant envoi au VLM.
+---
 
-**Code et données :** github.com/hdjebar/IntelligentLuxembourgHeritage
+### Signal 1.4 · Autoresearch (Karpathy) — boucle LLM autonome applicable à ILH Phase 2/3 (17 mars 2026) ★★ Nouveau
+**Source :** marktechpost.com (12 mars 2026) · lukesalamone.github.io · arxiv.org/html/2505.13111  
+**Scoring BnL :** ★★★★☆ Haute pertinence — distillation Phase 2/3
+
+Le framework **autoresearch** (Andrej Karpathy, publié 12 mars 2026) est une boucle LLM autonome sur GPU unique : l'agent modifie `train.py`, lance un entraînement limité en temps (5 min), mesure la métrique de validation, garde ou annule. Optimise sans supervision humaine. Un benchmark public rapporte des progrès mesurables sur une tâche de distillation.
+
+**Application directe ILH :**
+
+| autoresearch | ILH Phase 2/3 |
+|---|---|
+| Teacher model (figé) | Qwen3.5-397B-A17B — pseudo-labels du POC (offline) |
+| Student model | Lux-Heritage-7B → 2B (architecture modifiable) |
+| `train.py` | QLoRA + L = α·CE + (1-α)·KL(student‖teacher) |
+| Métrique figée | CER ≤ 2,72% sur 19 blocs CC0 + F1 NER ≥ G0 |
+| Budget par run | 5 min MeluXina-AI (A100 80Go) |
+| Déclenchement | Porte G2 validée — Mois 4–8 |
+
+**Avantage clé :** le teacher (397B) n'est pas en live — les corrections du POC servent de pseudo-labels offline. Coût teacher = 0€ pendant la boucle. La métrique (CER sur 19 blocs CC0) est déjà instrumentée dans le POC (`poc_bnl_golden.json`).
+
+**`program.md` pour ILH :**
+```
+Teacher = Qwen3.5-397B-A17B. Ne jamais modifier ses poids.
+Student = Lux-Heritage-7B. Tu peux modifier :
+  architecture (layers, hidden, heads), température KD (T),
+  mixing α, optimizer, scheduler, sampling.
+Amélioration si : CER ≤ 2,72% ET F1 NER ≥ G0
+  ET params student ≤ run précédent.
+Budget : 5 min · A100 MeluXina-AI
+```
+
+**Intégration roadmap :** Point d'entrée = porte G2 (Phase 2, Mois 4–8), après le fine-tuning manuel de base validé. Autoresearch explore ensuite l'espace hyperparamétrique automatiquement.
 
 ---
 
-### Signal 1.4 · Qwen3-VL OCR 32 langues — caractères anciens et rares
+### Signal 1.5 · Qwen3-VL OCR 32 langues — caractères anciens et rares
 **Source :** SiliconFlow · Qwen3-VL changelog  
 **Scoring BnL :** ★★★★☆ Signal continu
 
-Note de consolidation : Qwen3-VL (sept. 2025) a étendu le support OCR à 32 langues (vs 10 pour Qwen2.5-VL), avec amélioration explicite sur les **caractères anciens et rares, le jargon technique, et l'analyse de structure de longs documents**. Cette capacité est ce qui justifie le résultat POC sur le Fraktur historique — l'amélioration de 25,19% → 2,04% sur img5 (Fraktur 1850) en est la démonstration directe.
-
-**Pertinence BnL :** Chaque nouvelle version Qwen améliore l'OCR sur les caractères historiques. Qwen3.5 (février 2026) va plus loin avec la fusion précoce. Le cycle d'amélioration est favorable à la BnL — les données les plus difficiles (Fraktur, LB) bénéficient le plus des progrès en cours.
+Qwen3-VL (sept. 2025) a étendu le support OCR à 32 langues avec amélioration explicite sur les **caractères anciens et rares, le jargon technique, et l'analyse de structure de longs documents**. Confirmation directe par le résultat POC : img5 Fraktur 1850 : 25,19% → 2,04% en zero-shot.
 
 ---
 
@@ -99,18 +127,9 @@ Note de consolidation : Qwen3-VL (sept. 2025) a étendu le support OCR à 32 lan
 **Source :** aifactory.lu  
 **Scoring BnL :** ★★★★★ URGENT
 
-Le second appel HPC-AI BRIDGES est ouvert depuis le 1er mars 2026. Deadline à confirmer directement sur aifactory.lu. Le projet ILH (fine-tuning QLoRA Qwen3.5-35B-A3B sur données CC0 BnL + distillation 7B sur MeluXina-AI) correspond exactement au profil attendu :
-- Institution publique luxembourgeoise ✓
-- Données ouvertes CC0 ✓
-- Utilisation de MeluXina-AI ✓
-- Partenariat Uni.lu/C²DH ✓
+Le second appel HPC-AI BRIDGES est ouvert depuis le 1er mars 2026. Le projet ILH (fine-tuning QLoRA Qwen3.5-35B-A3B sur données CC0 BnL + distillation 7B sur MeluXina-AI) correspond exactement au profil attendu : institution publique LU ✓, données CC0 ✓, MeluXina-AI ✓, partenariat Uni.lu/C²DH ✓.
 
-**Budget estimé pour ILH :**
-- Phase 2 fine-tuning QLoRA : 50–200 € par run
-- Distillation 35B → 7B : 500–1 500 € total
-- Infrastructure CTIE (inférence production) : 0 € supplémentaire (serveurs AI4Gov existants)
-
-**Action :** Soumettre le dossier HPC-AI BRIDGES avant la deadline. Utiliser les résultats POC (CER 2,72%) comme justification technique du Go.
+**Budget estimé :** Phase 2 fine-tuning : 50–200€/run · Distillation 35B→7B : 500–1 500€ total.
 
 ---
 
@@ -120,24 +139,15 @@ Le second appel HPC-AI BRIDGES est ouvert depuis le 1er mars 2026. Deadline à c
 **Source :** aifactory.lu  
 **Scoring BnL :** ★★★☆☆
 
-Plenière REMI (Regulation Meets Innovation) le 17 mars 2026 à Esch-Belval. Rassemble l'écosystème IA luxembourgeois autour de l'adoption responsable. Organisé par la Luxembourg AI Factory.
-
-**Action :** Suivre les compte-rendus pour cartographier les acteurs de la conformité EU AI Act au Luxembourg, en vue de l'AIPD pipeline ILH.
+Plenière REMI (Regulation Meets Innovation) le 17 mars 2026 à Esch-Belval. Rassemble l'écosystème IA luxembourgeois autour de l'adoption responsable.
 
 ---
 
 ### Signal 3.2 · Deadline candidature BnL — 27 mars 2026
-**Source :** bnl.public.lu · GovJobs  
+**Source :** bnl.public.lu  
 **Scoring BnL :** ★★★★★ — Deadline absolue
 
-La deadline de candidature pour le poste de Responsable projets IA et Data (réf. F00040485) est le **27 mars 2026** via MyGuichet. Documents requis : lettre de motivation, CV, diplôme. Format PDF, taille max 20 Mo.
-
-**Dossier de candidature :**
-- CV tailored (EN)
-- Lettre de motivation (FR)
-- Artefact technique : Intelligent Luxembourg Heritage — proposition de projet avec POC mesuré
-- Résultats POC : github.com/hdjebar/IntelligentLuxembourgHeritage
-- Bulletins de veille : github.com/hdjebar/cand-veille
+La deadline de candidature pour le poste de Responsable projets IA et Data (réf. F00040485) est le **27 mars 2026** via MyGuichet.
 
 ---
 
@@ -149,6 +159,7 @@ La deadline de candidature pour le poste de Responsable projets IA et Data (réf
 | 3.2 | Deadline candidature BnL (27 mars) | ★★★★★ | 27 mars | 🔄 En cours |
 | 1.2 | HIPE-OCRepair données disponibles | ★★★★★ | Avant 23 mars | ⚠️ Action requise |
 | 2.1 | HPC-AI BRIDGES appel mars | ★★★★★ | Deadline ? | ⚠️ Dossier à soumettre |
+| **1.4** | **Autoresearch Karpathy → ILH G2 (17 mars)** | **★★★★☆** | **Phase 2/3** | **🆕 Nouveau** |
 | 1.1 | Qwen3.5 Small (2 mars) | ★★★★☆ | Benchmark | 🔄 À tester |
 | 3.1 | REMI Initiative (17 mars) | ★★★☆☆ | 17 mars | 📅 Aujourd'hui |
 
