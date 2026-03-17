@@ -19,7 +19,7 @@ Madame, Monsieur,
 
 En décembre 2025, la BnL a signé le MoU AI4LAM à la British Library. Dix-sept projets IA livrés, un programme 2025-2028 de 171 initiatives. Ce que cela engage maintenant, c’est de faire tenir ces projets en production et de s’assurer que les chercheurs et les bibliothécaires en tirent un bénéfice réel dans la valorisation du patrimoine numérique.
 
-Piloter cette transition dans des institutions à gouvernance formelle, j’y travaille depuis dix ans. Commission européenne, Parlement européen, Société Générale Luxembourg. Dans chacun de ces contextes, la même réalité : livrer de l’IA ne suffit pas. Il faut que les équipes se l’approprient réellement. Que la gouvernance tienne dans la durée. La conformité EU AI Act, ça se décide en Phase 0, pas en Phase 4. C’est en composant avec les parties prenantes — et pas autour d’elles — que le travail aboutit.
+Piloter cette transition dans des institutions à gouvernance formelle, j’y travaille depuis dix ans. Commission européenne, Parlement européen, Société Générale Luxembourg. Dans chacun de ces contextes, la même réalité : livrer de l’IA ne suffit pas. Il faut que les équipes se l’approprient réellement. Que la gouvernance tienne dans la durée. La conformité EU AI Act, ça se décide en Phase 0, pas en Phase 4. C’est en composant avec les parties prenantes, et pas autour d’elles, que le travail aboutit.
 
 Intelligent Luxembourg Heritage part de là. Le POC tourne sur les données CC0 de data.bnl.lu : CER 2,72 % sur les images officielles Nautilus, sans fine-tuning. Le pipeline (METS/ALTO → VLM → OCR + NER + entity linking Wikidata/ARK, NAAN 70795) est piloté sous QUAPITAL-HERMES composé avec CRISP-ML(Q), trois portes de décision, EU AI Act intégré dès la conception.
 
@@ -36,4 +36,4 @@ Veuillez agréer, Madame, Monsieur, l’expression de mes salutations respectueu
 **Djebar Hammouche**
 
 ---
-*Candidature déposée via MyGuichet.lu – réf. F00040485 (Employé de l’État)*
+*Candidature déposée via MyGuichet.lu, réf. F00040485 (Employé de l’État)*
