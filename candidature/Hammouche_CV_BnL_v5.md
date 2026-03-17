@@ -21,9 +21,9 @@ Le programme de travail BnL 2025-2028 pose un défi précis : 171 projets à pi
 |---|---|
 | TOGAF, ArchiMate, Microservices, API Management, Bases de données, Docker, Kubernetes, CI/CD | GDPR, ISO 27001, NIS2, DORA, EU AI Act, Zero Trust, IAM |
 
-| **Technologies opérationnelles (OT)** | **Standards patrimoniaux** |
+| **Technologies opérationnelles (OT)** | **Interopérabilité données** |
 |---|---|
-| Logistique de distribution, Gestion d’entrepôt/magasinage, Automatisation des flux physiques, RFID, Systèmes robotisés de stockage, TLS (Theory of Constraints, Lean, Six Sigma) | METS/ALTO, OAI-PMH, SDMX, ARK (NAAN 70795), IIIF, bibnet.lu |
+| Logistique de distribution, Gestion d’entrepôt/magasinage, Automatisation des flux physiques, RFID, Systèmes robotisés de stockage, TLS (Theory of Constraints, Lean, Six Sigma) | SDMX (échanges Eurostat/STATEC) |
 
 | **Développement & Intégration** | **Cloud & MLOps** |
 |---|---|
