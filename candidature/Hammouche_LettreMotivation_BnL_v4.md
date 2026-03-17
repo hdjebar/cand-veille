@@ -1,5 +1,5 @@
 # Lettre de motivation – Responsable projets IA et Data
-## Bibliothèque nationale du Luxembourg | Réf. F00040485
+## Bibliothèque nationale du Luxembourg | Réf. F00040485 – Employé de l'État
 
 ---
 
@@ -34,4 +34,4 @@ Veuillez agréer, Madame, Monsieur, l'expression de mes salutations respectueuse
 **Djebar Hammouche**
 
 ---
-*Candidature déposée via MyGuichet.lu – réf. F00040485*
+*Candidature déposée via MyGuichet.lu – réf. F00040485 (Employé de l'État)*
