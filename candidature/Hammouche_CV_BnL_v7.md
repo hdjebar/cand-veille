@@ -7,7 +7,7 @@ Luxembourg City | +352 661 419 771 | dhammouche@gmail.com
 
 ## Responsable projets IA et Data
 
-Le programme de travail BnL 2025-2028 engage 171 projets vers un objectif précis : faire tenir l’IA en production, au service de la valorisation des collections et de l’accompagnement des chercheurs. C’est cette transition — passer de prototypes isolés à un programme structuré, livrable, pérenne — que je construis depuis dix ans dans des institutions à gouvernance formelle. Intelligent Luxembourg Heritage, développé sur les données CC0 de data.bnl.lu, en donne la mesure : CER 2,72 % contre la baseline publiée Nautilus/Kraken, sans fine-tuning, piloté sous QUAPITAL-HERMES composé avec CRISP-ML(Q). Je veux contribuer à industrialiser ce programme avec les équipes qui connaissent les collections et les chercheurs qui en dépendent.
+Le programme de travail BnL 2025-2028 porte 171 projets vers un seul objectif : faire tenir l’IA en production, au service de la valorisation des collections et de l’accompagnement des chercheurs. Passer de prototypes isolés à un programme structuré, livrable, pérenne. C’est ce que je construis depuis dix ans dans des institutions à gouvernance formelle. Intelligent Luxembourg Heritage en est la démonstration directe : CER 2,72 % sur les données CC0 BnL, sans fine-tuning, piloté sous QUAPITAL-HERMES composé avec CRISP-ML(Q). Je veux apporter ce travail à la BnL et le développer avec les équipes qui connaissent les collections et les chercheurs qui en dépendent.
 
 ---
 
@@ -39,8 +39,8 @@ Le programme de travail BnL 2025-2028 engage 171 projets vers un objectif préci
 *Missions en parallèle pour des institutions publiques et entreprises luxembourgeoises. Sélection :*
 
 **Intelligent Luxembourg Heritage — BnL (2025–2026, 5 mois)**  
-POC zero-shot mesuré sur les données officielles BnL (CC0) : CER 2,72 % vs Nautilus/Kraken 3,68 % publié, sans fine-tuning, sur les mêmes images de référence. Pipeline : images METS/ALTO → VLM (Qwen3.5-397B-A17B) → post-correction OCR + NER (PER, LOC, ORG, DATE) + bbox_2d en une passe → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu. Phase 1-2 : 800 000 pages, presse historique DE/FR/LB. Phase 3+ : pipeline vidéo OT→IT (robot feuilleteur → frames → VLM). Piloté sous QUAPITAL-HERMES composé avec CRISP-ML(Q) : trois portes de décision, registre des risques, quality gates. EU AI Act intégré dès la conception : Art. 50, model card, AIPD. Partenariats engagés : Uni.lu, C²DH, Impresso Phase 2.  
-Soumission HIPE-OCRepair 2026 prête (6–8 avril) : le GT BnL CC0 (6 723 blocs, presse LU DE/FR/LB) comble le gap LB absent du benchmark ICDAR — première comparaison VLM vs BERT sur presse luxembourgeoise.  
+POC zero-shot sur les données officielles BnL (CC0) : CER 2,72 % vs Nautilus/Kraken 3,68 % publié, sans fine-tuning, sur les mêmes images de référence. Pipeline : METS/ALTO → VLM (Qwen3.5-397B-A17B) → post-correction OCR + NER (PER, LOC, ORG, DATE) + bbox_2d → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu. Phase 1-2 : 800 000 pages, presse historique DE/FR/LB. Phase 3+ : robot feuilleteur → frames vidéo → VLM (OT→IT). Piloté sous QUAPITAL-HERMES composé avec CRISP-ML(Q). EU AI Act intégré dès la conception : Art. 50, model card, AIPD. Partenariats engagés : Uni.lu, C²DH, Impresso Phase 2.  
+Soumission HIPE-OCRepair 2026 prête (6–8 avril) : le GT BnL CC0 (6 723 blocs, presse LU DE/FR/LB) comble le gap LB absent du benchmark ICDAR — première comparaison VLM vs BERT sur presse luxembourgeoise.  
 → [github.com/hdjebar/IntelligentLuxembourgHeritage](https://github.com/hdjebar/IntelligentLuxembourgHeritage)
 
 **Plateforme RAG multimodale — institution financière (2024–2025, 14 mois)**  
@@ -95,7 +95,7 @@ Co-construit avec la direction la pratique EA interne. Automatisé les opératio
 ### Enterprise BPM Architect | STATEC | Luxembourg
 **Octobre 2014 – Février 2015**
 
-Bâti, avec les équipes internes, la démarche Architecture d’Entreprise et BPM alignée sur les standards statistiques européens (ESS, GSBPM, GAMSO, CEAF). Échanges avec Eurostat via SDMX — format structuré directement pertinent pour les travaux BnL autour de METS/ALTO et OAI-PMH.
+Bâti, avec les équipes internes, la démarche Architecture d’Entreprise et BPM alignée sur les standards statistiques européens (ESS, GSBPM, GAMSO, CEAF). Échanges avec Eurostat via SDMX — format structuré directement pertinent pour les travaux BnL autour de METS/ALTO et OAI-PMH.
 
 ---
 
