@@ -1,5 +1,5 @@
-# Lettre de motivation – Responsable projets IA et Data
-## Bibliothèque nationale du Luxembourg | Réf. F00040485 – Employé de l'État
+# Lettre de motivation – Responsable projets IA et Data (m/f)
+## Bibliothèque nationale du Luxembourg | Réf. E00040484 / F00040485
 
 ---
 
