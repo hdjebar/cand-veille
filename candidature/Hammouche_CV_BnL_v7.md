@@ -7,7 +7,7 @@ Luxembourg City | +352\u00a0661\u00a0419\u00a0771 | dhammouche@gmail.com
 
 ## Responsable projets IA et Data
 
-Le programme de travail BnL 2025-2028 porte 171 projets vers un seul objectif\u00a0: faire tenir l\u2019IA en production, au service de la valorisation des collections et de l\u2019accompagnement des chercheurs. Passer de prototypes isol\u00e9s \u00e0 un programme structur\u00e9, livrable, p\u00e9renne\u00a0: c\u2019est ce que je construis depuis dix ans dans des institutions \u00e0 gouvernance formelle. Intelligent Luxembourg Heritage en est la d\u00e9monstration directe\u00a0: CER 2,72\u00a0% sur les donn\u00e9es CC0 BnL, sans fine-tuning, pilot\u00e9 sous QUAPITAL-HERMES compos\u00e9 avec CRISP-ML(Q). Je veux apporter ce travail \u00e0 la BnL et le d\u00e9velopper avec les \u00e9quipes qui connaissent les collections et les chercheurs qui en d\u00e9pendent.
+La BnL a num\u00e9ris\u00e9 huit millions d\u2019articles de presse historique luxembourgeoise. Ces textes sont accessibles\u00a0; les entit\u00e9s qu\u2019ils contiennent, les personnes, les lieux, les organisations, ne le sont pas encore. C\u2019est ce probl\u00e8me concret que j\u2019ai choisi pour construire Intelligent Luxembourg Heritage\u00a0: CER 2,72\u00a0% sur les donn\u00e9es CC0 BnL, sans fine-tuning, pilot\u00e9 sous QUAPITAL-HERMES compos\u00e9 avec CRISP-ML(Q). Faire tenir ce type de projet en production, dans des institutions \u00e0 gouvernance formelle, c\u2019est ce que je construis depuis dix ans. Je veux apporter ce travail \u00e0 la BnL et le d\u00e9velopper avec les \u00e9quipes qui connaissent les collections et les chercheurs qui en d\u00e9pendent.
 
 ---
 
@@ -40,7 +40,7 @@ Le programme de travail BnL 2025-2028 porte 171 projets vers un seul objectif\u0
 
 ---
 
-> **Proposition de projet \u2014 Intelligent Luxembourg Heritage**
+> **Proposition de projet \u2013 Intelligent Luxembourg Heritage**
 >
 > La BnL a num\u00e9ris\u00e9 huit millions d\u2019articles de presse historique luxembourgeoise (1840 \u00e0 nos jours, DE/FR/LB). Ces textes sont accessibles\u00a0; les entit\u00e9s qu\u2019ils contiennent, les personnes, lieux, organisations, \u00e9v\u00e9nements, ne le sont pas. Aucun chercheur ne peut aujourd\u2019hui demander \u00ab\u00a0toutes les mentions de tel personnage entre 1900 et 1914\u00a0\u00bb et obtenir une r\u00e9ponse en quelques secondes.
 >
