@@ -7,7 +7,7 @@ Luxembourg City | +352\u00a0661\u00a0419\u00a0771 | dhammouche@gmail.com
 
 ## Responsable projets IA et Data
 
-La BnL a num\u00e9ris\u00e9 huit millions d\u2019articles de presse historique luxembourgeoise. Ces textes sont accessibles\u00a0; les entit\u00e9s qu\u2019ils contiennent, les personnes, les lieux, les organisations, ne le sont pas encore. C\u2019est ce probl\u00e8me concret que j\u2019ai choisi pour construire Intelligent Luxembourg Heritage\u00a0: CER 2,72\u00a0% sur les donn\u00e9es CC0 BnL, sans fine-tuning, pilot\u00e9 sous QUAPITAL-HERMES compos\u00e9 avec CRISP-ML(Q). Faire tenir ce type de projet en production, dans des institutions \u00e0 gouvernance formelle, c\u2019est ce que je construis depuis dix ans. Je veux apporter ce travail \u00e0 la BnL et le d\u00e9velopper avec les \u00e9quipes qui connaissent les collections et les chercheurs qui en d\u00e9pendent.
+La BnL a num\u00e9ris\u00e9 huit millions d\u2019articles. Ces textes sont accessibles\u00a0; les entit\u00e9s qu\u2019ils contiennent, les personnes, les lieux, les organisations, ne le sont pas encore. C\u2019est ce probl\u00e8me que j\u2019ai choisi pour construire Intelligent Luxembourg Heritage\u00a0: CER 2,72\u00a0% sur les donn\u00e9es CC0 BnL, sans fine-tuning, pilot\u00e9 sous QUAPITAL-HERMES compos\u00e9 avec CRISP-ML(Q). Faire tenir ce type de projet en production dans des institutions \u00e0 gouvernance formelle, c\u2019est ce que je construis depuis dix ans. Je veux apporter ce travail \u00e0 la BnL et le d\u00e9velopper avec les \u00e9quipes qui connaissent les collections et les chercheurs qui en d\u00e9pendent.
 
 ---
 
