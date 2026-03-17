@@ -177,5 +177,5 @@ Membre actif, PMI Luxembourg Chapter et Agile Luxembourg Community.
 ## Langues
 
 **Français :** natif (C2) | **Anglais :** professionnel avancé (C1)  
-**Allemand / Luxembourgeois :** demande de dispense introduite conformément à l’article 76 de la loi modifiée du 25 mars 2015 (groupe A1, éligibilité confirmée).  
+Je sollicite la dispense de deux des trois langues administratives prévue pour le groupe A1 dans les conditions d’admission du poste.  
 *L’usage de l’anglais dans les expériences et publications internationales est conforme aux pratiques du secteur GLAM (AI4LAM, LIBER, ICDAR, Impresso) et des institutions scientifiques luxembourgeoises.*
