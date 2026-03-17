@@ -36,6 +36,3 @@ Je me tiens \u00e0 votre disposition pour un entretien.
 Veuillez agr\u00e9er, Madame, Monsieur, l\u2019expression de mes salutations respectueuses.
 
 **Djebar Hammouche**
-
----
-*Candidature d\u00e9pos\u00e9e via MyGuichet.lu, r\u00e9f. F00040485 (Employ\u00e9 de l\u2019\u00c9tat)*
