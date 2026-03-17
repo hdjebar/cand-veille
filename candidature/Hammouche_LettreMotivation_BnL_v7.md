@@ -27,6 +27,8 @@ Et en ce moment, le benchmark HIPE-OCRepair 2026 (ICDAR) couvre le français et 
 
 En tant qu’établissement public recrutant sur un emploi nouveau en CDI, la BnL est éligible au dispositif d’emploi d’insertion (art. L.541-5 du Code du travail) : le Fonds pour l’emploi rembourse 100 % des frais salariaux jusqu’à la retraite, plafonnés à 150 % du SSM, soit actuellement 4 055 €/mois. La démarche appartient à la BnL, en amont de la signature du contrat.
 
+Conformément à l’article 76 de la loi modifiée du 25 mars 2015 fixant le régime des employés de l’État, je sollicite une dispense des conditions de langue pour l’allemand et le luxembourgeois. Mon profil correspond au groupe A1 et l’éligibilité à cette dispense est confirmée. Les pièces justificatives sont disponibles sur demande.
+
 Mon entrée dans les collections passe par les formats en production : METS/ALTO, OAI-PMH, ARK (NAAN 70795), Alma. J’ai appris à lire ce genre de référentiel avant de proposer une architecture, à STATEC avec SDMX, à la Commission avec les systèmes documentaires du Traité de Lisbonne. La logique est la même. Ce que les équipes BnL ont bâti en huit mois à mi-temps, un chatbot devenu référence nationale, dit quelque chose sur leur façon de travailler. C’est avec ces équipes-là que je veux co-construire la suite.
 
 Je me tiens à votre disposition pour un entretien.
