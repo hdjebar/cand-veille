@@ -1,13 +1,13 @@
 # DJEBAR HAMMOUCHE
 
-Luxembourg City | +352 661 419 771 | dhammouche@gmail.com  
+Luxembourg City | +352 661 419 771 | dhammouche@gmail.com  
 [linkedin.com/in/hdjebar](https://linkedin.com/in/hdjebar) | [github.com/hdjebar](https://github.com/hdjebar)
 
 ---
 
 ## Responsable projets IA et Data
 
-En signant le MoU AI4LAM et en portant son programme 2025-2028 à 171 projets, la BnL a posé un défi précis : passer de dix-sept initiatives IA isolées à un programme structuré, livrable en production, au service de la valorisation des collections et de l’accompagnement des chercheurs. J’ai répondu à ce défi sur les données CC0 de data.bnl.lu : Intelligent Luxembourg Heritage atteint CER 2,72 % sans fine-tuning, piloté sous QUAPITAL-HERMES composé avec CRISP-ML(Q). Faire tenir ce type de projet en production dans des institutions à gouvernance formelle, c’est ce que je construis depuis dix ans. Je veux apporter ce travail à la BnL et le développer avec les équipes qui connaissent les collections et les chercheurs qui en dépendent.
+En signant le MoU AI4LAM et en portant son programme 2025-2028 à 171 projets, la BnL a posé un défi précis : passer de dix-sept initiatives IA isolées à un programme structuré, livrable en production, au service de la valorisation des collections et de l'accompagnement des chercheurs. J'ai répondu à ce défi sur les données CC0 de data.bnl.lu : Intelligent Luxembourg Heritage atteint CER 2,72 % sans fine-tuning, piloté sous QUAPITAL-HERMES composé avec CRISP-ML(Q). Faire tenir ce type de projet en production dans des institutions à gouvernance formelle, c'est ce que je construis depuis dix ans. Je veux apporter ce travail à la BnL et le développer avec les équipes qui connaissent les collections et les chercheurs qui en dépendent.
 
 ---
 
@@ -19,11 +19,11 @@ En signant le MoU AI4LAM et en portant son programme 2025-2028 à 171 projets, l
 
 | **Architecture & Systèmes** | **Sécurité & Conformité** |
 |---|---|
-| TOGAF, ArchiMate, Microservices, API Management, Bases de données, Docker, Kubernetes, CI/CD | GDPR, ISO 27001, NIS2, DORA, EU AI Act, Zero Trust, IAM |
+| TOGAF, ArchiMate, Microservices, API Management, Bases de données, Docker, Kubernetes, CI/CD | GDPR, ISO 27001, NIS2, DORA, EU AI Act, Zero Trust, IAM |
 
 | **Technologies opérationnelles (OT)** | **Interopérabilité données** |
 |---|---|
-| Logistique de distribution, Gestion d’entrepôt/magasinage, Automatisation des flux physiques, RFID, Systèmes robotisés de stockage, TLS (Theory of Constraints, Lean, Six Sigma) | SDMX (échanges Eurostat/STATEC) |
+| Logistique de distribution, Gestion d'entrepôt/magasinage, Automatisation des flux physiques, RFID, Systèmes robotisés de stockage, TLS (Theory of Constraints, Lean, Six Sigma) | SDMX (échanges Eurostat/STATEC) |
 
 | **Développement & Intégration** | **Cloud & MLOps** |
 |---|---|
@@ -36,46 +36,46 @@ En signant le MoU AI4LAM et en portant son programme 2025-2028 à 171 projets, l
 ### Architecte IA & Data | Projets & missions | Luxembourg
 **2014 – présent**
 
-*Missions en parallèle pour des institutions publiques et entreprises luxembourgeoises. Sélection :*
+*Missions en parallèle pour des institutions publiques et entreprises luxembourgeoises. Sélection :*
 
 ---
 
 > **Proposition de projet – Intelligent Luxembourg Heritage**
 >
-> La BnL a numérisé huit millions d’articles de presse historique luxembourgeoise (1840 à nos jours, DE/FR/LB). Ces textes sont accessibles ; les entités qu’ils contiennent, les personnes, lieux, organisations, événements, ne le sont pas. Aucun chercheur ne peut aujourd’hui demander « toutes les mentions de tel personnage entre 1900 et 1914 » et obtenir une réponse en quelques secondes.
+> La BnL a numérisé huit millions d'articles de presse historique luxembourgeoise (1840 à nos jours, DE/FR/LB). Ces textes sont accessibles ; les entités qu'ils contiennent, les personnes, lieux, organisations, événements, ne le sont pas. Aucun chercheur ne peut aujourd'hui demander « toutes les mentions de tel personnage entre 1900 et 1914 » et obtenir une réponse en quelques secondes.
 >
-> ILH propose de construire le pipeline qui comble ce gap : extraire automatiquement ces entités, les relier au catalogue bibnet.lu et à Wikidata, et les rendre interrogeables depuis eluxemburgensia.lu. La preuve de concept a été développée sur les données ouvertes CC0 de data.bnl.lu et validée sur les mêmes images de référence que la baseline officielle Nautilus-OCR.
+> ILH propose de construire le pipeline qui comble ce gap : extraire automatiquement ces entités, les relier au catalogue bibnet.lu et à Wikidata, et les rendre interrogeables depuis eluxemburgensia.lu. La preuve de concept a été développée sur les données ouvertes CC0 de data.bnl.lu et validée sur les mêmes images de référence que la baseline officielle Nautilus-OCR.
 
 ---
 
 **Intelligent Luxembourg Heritage, BnL (2025 – en cours)**
 
-*Pour tous :* La presse historique luxembourgeoise contient huit millions d’articles en allemand, français et luxembourgeois. Ces textes sont numérisés, mais pas enrichis : les noms de personnes, de lieux, d’organisations sont dans le texte, mais pas interrogeables. ILH construit le pipeline qui les extrait, les relie au catalogue bibnet.lu et à Wikidata, et les rend accessibles depuis eluxemburgensia.lu. Un chercheur peut demander toutes les mentions d’un personnage ou d’un lieu sur cent ans de presse, et obtenir une réponse en quelques secondes.
+*Pour tous :* La presse historique luxembourgeoise contient huit millions d'articles en allemand, français et luxembourgeois. Ces textes sont numérisés, mais pas enrichis : les noms de personnes, de lieux, d'organisations sont dans le texte, mais pas interrogeables. ILH construit le pipeline qui les extrait, les relie au catalogue bibnet.lu et à Wikidata, et les rend accessibles depuis eluxemburgensia.lu. Un chercheur peut demander toutes les mentions d'un personnage ou d'un lieu sur cent ans de presse, et obtenir une réponse en quelques secondes.
 
-*Technique :* POC zero-shot sur les données officielles BnL (CC0) : CER 2,72 % vs Nautilus/Kraken 3,68 % publié, sans fine-tuning. Pipeline : METS/ALTO → VLM (Qwen3.5-397B-A17B) → post-correction OCR + NER (PER, LOC, ORG, DATE) + bbox_2d → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu ; Phase 1-2 : 800 000 pages, presse historique DE/FR/LB ; Phase 3+ : robot feuilleteur → frames vidéo → VLM (OT→IT). Piloté sous QUAPITAL-HERMES composé avec CRISP-ML(Q). EU AI Act intégré dès la conception : Art. 50, model card, AIPD. Partenariats engagés : Uni.lu, C²DH, Impresso Phase 2.  
-Soumission HIPE-OCRepair 2026 prête (6–8 avril) : benchmark ICDAR couvrant FR/DE/LB via Impresso (LFR cofinance) ; première comparaison VLM vs BERT sur presse luxembourgeoise avec le GT BnL CC0 (6 723 blocs).  
+*Technique :* POC zero-shot sur les données officielles BnL (CC0) : CER 2,72 % vs Nautilus/Kraken 3,68 % publié, sans fine-tuning. Pipeline : METS/ALTO → VLM (Qwen3.5-397B-A17B) → post-correction OCR + NER (PER, LOC, ORG, DATE) + bbox_2d → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu ; Phase 1-2 : 800 000 pages, presse historique DE/FR/LB ; Phase 3+ : robot feuilleteur → frames vidéo → VLM (OT→IT). Piloté sous QUAPITAL-HERMES composé avec CRISP-ML(Q). EU AI Act intégré dès la conception : Art. 50, model card, AIPD. Partenariats engagés : Uni.lu, C²DH, Impresso Phase 2.  
+Soumission HIPE-OCRepair 2026 prête (6–8 avril) : benchmark ICDAR couvrant FR/DE/LB via Impresso (LFR cofinance) ; première comparaison VLM vs BERT sur presse luxembourgeoise avec le GT BnL CC0 (6 723 blocs). Évaluation locale scorer officiel : cMER 1,38 % vs Nautilus/Kraken 3,68 % (Schneider 2023) — gain +2,30 pp, zero-shot.  
 → [github.com/hdjebar/IntelligentLuxembourgHeritage](https://github.com/hdjebar/IntelligentLuxembourgHeritage)
 
 **Plateforme RAG multimodale, institution financière (2024–2025, 14 mois)**  
-Co-construit avec les équipes métier et IT une plateforme de recherche sémantique sur des dépôts hétérogènes (documents, images, données structurées). Pipeline : ingestion multimodale → post-correction OCR → embeddings → chaîne LangChain avec attribution des sources → enrichissement NER. Ce qui prenait des heures de navigation manuelle entre silos se résout désormais en quelques secondes.
+Co-construit avec les équipes métier et IT une plateforme de recherche sémantique sur des dépôts hétérogènes (documents, images, données structurées). Pipeline : ingestion multimodale → post-correction OCR → embeddings → chaîne LangChain avec attribution des sources → enrichissement NER. Ce qui prenait des heures de navigation manuelle entre silos se résout désormais en quelques secondes.
 
-**Plateforme d’aide à la décision architecturale, groupe d’assurance (2023–2024, 8 mois)**  
-Bâti, aux côtés d’une équipe d’architectes enterprise, une plateforme GraphRAG couplant LangChain, bases vectorielles et standards ArchiMate. Les architectes interrogent en langage naturel des volumes importants de documentation technique et institutionnelle qui restaient jusqu’alors dans des silos inaccessibles en temps réel.
+**Plateforme d'aide à la décision architecturale, groupe d'assurance (2023–2024, 8 mois)**  
+Bâti, aux côtés d'une équipe d'architectes enterprise, une plateforme GraphRAG couplant LangChain, bases vectorielles et standards ArchiMate. Les architectes interrogent en langage naturel des volumes importants de documentation technique et institutionnelle qui restaient jusqu'alors dans des silos inaccessibles en temps réel.
 
-**Système d’analyse prédictive en santé, Agence de la Biomédecine, France (2022–2023)**  
-Développé, aux côtés des équipes médicales, des algorithmes de scoring ML pour l’allocation de greffons hépatiques. De la préparation des données à la validation clinique : un cycle complet, avec les cliniciens à chaque étape.
+**Système d'analyse prédictive en santé, Agence de la Biomédecine, France (2022–2023)**  
+Développé, aux côtés des équipes médicales, des algorithmes de scoring ML pour l'allocation de greffons hépatiques. De la préparation des données à la validation clinique : un cycle complet, avec les cliniciens à chaque étape.
 
 **Développement de skills Claude AI (2024–2025)**  
-*ai-methodologies* : CRISP-DM, CRISP-ML(Q), LLMOps, EU AI Act. *enterprise-architecture* : 50+ frameworks (ArchiMate, BPMN, TOGAF, sécurité, MLOps). *eu-ai-act-compliance* : classification des risques, obligations GPAI, conformité Art. 9-15.
+*ai-methodologies* : CRISP-DM, CRISP-ML(Q), LLMOps, EU AI Act. *enterprise-architecture* : 50+ frameworks (ArchiMate, BPMN, TOGAF, sécurité, MLOps). *eu-ai-act-compliance* : classification des risques, obligations GPAI, conformité Art. 9-15.
 
 ---
 
-### Architecte d’entreprise | Société Générale Luxembourg | Luxembourg
+### Architecte d'entreprise | Société Générale Luxembourg | Luxembourg
 **Juillet 2023 – Mars 2024**
 
-*Architecture sur quatre juridictions : Luxembourg, Paris, Suisse, Monaco.*
+*Architecture sur quatre juridictions : Luxembourg, Paris, Suisse, Monaco.*
 
-- Co-construit avec les parties prenantes réglementaires une stratégie cloud conforme aux exigences CSSF : gouvernance, vocabulaire réglementaire, alignement multi-entités.
+- Co-construit avec les parties prenantes réglementaires une stratégie cloud conforme aux exigences CSSF : gouvernance, vocabulaire réglementaire, alignement multi-entités.
 - Déployé, avec les équipes IT, des standards enterprise pour le management des API, le monitoring et la sécurité.
 - Traduit des décisions architecturales en programmes de changement que les équipes ont réellement adoptés, dans un contexte multi-juridictions à forte complexité organisationnelle.
 
@@ -84,52 +84,52 @@ Développé, aux côtés des équipes médicales, des algorithmes de scoring ML 
 ### Programme Data Science avancée | Paris Mines Tech | Paris
 **Novembre 2022 – Mars 2023**
 
-Programme exécutif intensif : machine learning avancé, deep learning, big data, IA en santé numérique. Livré un système speech-to-text ML de bout en bout ; participé à des hackathons santé impliquant fine-tuning et évaluation sur données contraintes.
+Programme exécutif intensif : machine learning avancé, deep learning, big data, IA en santé numérique. Livré un système speech-to-text ML de bout en bout ; participé à des hackathons santé impliquant fine-tuning et évaluation sur données contraintes.
 
 ---
 
-### Architecte d’entreprise | KPMG Luxembourg | Luxembourg
+### Architecte d'entreprise | KPMG Luxembourg | Luxembourg
 **Décembre 2021 – Octobre 2022**
 
-Co-construit avec la direction la pratique EA interne ; automatisé les opérations de données ServiceNow via PowerShell ; co-défini les frameworks de gouvernance Microsoft Power Platform ; architecturé les capacités d’analytics cloud pour une BI quasi-temps réel.
+Co-construit avec la direction la pratique EA interne ; automatisé les opérations de données ServiceNow via PowerShell ; co-défini les frameworks de gouvernance Microsoft Power Platform ; architecturé les capacités d'analytics cloud pour une BI quasi-temps réel.
 
 ---
 
 ### Architecte & Analyste métier | Luxembourg Conseil | Luxembourg
 **Mars 2015 – Novembre 2021**
 
-*Missions multi-secteurs : gouvernement, pharma, services financiers, emploi.*
+*Missions multi-secteurs : gouvernement, pharma, services financiers, emploi.*
 
-- **Agence de paiement wallonne :** reconfiguré l’architecture enterprise de bout en bout avec les équipes métier : délais de traitement réduits de semaines à jours ; référentiel EA dans ArchiMate/Sparx EA ; reporting batch remplacé par une BI temps réel.
-- Piloté des projets pluridisciplinaires sur BPM, gouvernance des données, migration cloud et IAM ; chacun coordonné avec les spécialistes de domaine et livré dans le périmètre, le planning et le budget convenus.
+- **Agence de paiement wallonne :** reconfiguré l'architecture enterprise de bout en bout avec les équipes métier : délais de traitement réduits de semaines à jours ; référentiel EA dans ArchiMate/Sparx EA ; reporting batch remplacé par une BI temps réel.
+- Piloté des projets pluridisciplinaires sur BPM, gouvernance des données, migration cloud et IAM ; chacun coordonné avec les spécialistes de domaine et livré dans le périmètre, le planning et le budget convenus.
 
 ---
 
-### Architecte BPM d’entreprise | STATEC | Luxembourg
+### Architecte BPM d'entreprise | STATEC | Luxembourg
 **Octobre 2014 – Février 2015**
 
-Bâti, avec les équipes internes, la démarche Architecture d’Entreprise et BPM alignée sur les standards statistiques européens (ESS, GSBPM, GAMSO, CEAF). Échanges avec Eurostat via SDMX, format directement pertinent pour les travaux BnL autour de METS/ALTO et OAI-PMH.
+Bâti, avec les équipes internes, la démarche Architecture d'Entreprise et BPM alignée sur les standards statistiques européens (ESS, GSBPM, GAMSO, CEAF). Échanges avec Eurostat via SDMX, format directement pertinent pour les travaux BnL autour de METS/ALTO et OAI-PMH.
 
 ---
 
 ### Consultant IT | COPROCESS SA | Luxembourg
 **Janvier 2012 – Septembre 2014**
 
-Audits IT, transformation enterprise, optimisation processus santé (approche TLS) ; analyse et restructuration de flux physiques : logistique de distribution, gestion de magasinage, automatisation d’entrepôt. Co-fondé LuxBA et LuxEA, les deux communautés de pratique luxembourgeoises en analyse métier et architecture d’entreprise.
+Audits IT, transformation enterprise, optimisation processus santé (approche TLS) ; analyse et restructuration de flux physiques : logistique de distribution, gestion de magasinage, automatisation d'entrepôt. Co-fondé LuxBA et LuxEA, les deux communautés de pratique luxembourgeoises en analyse métier et architecture d'entreprise.
 
 ---
 
 ### Analyste métier & Chef de projet IT | Commission européenne | Bruxelles/Luxembourg
 **Juin 2007 – Décembre 2011**
 
-Co-développé le programme d’architecture enterprise et la méthodologie BPM ; re-enginéeré, avec les équipes eGreffe, les systèmes documentaires pour la conformité au Traité de Lisbonne ; reconfiguré, avec DG Traduction, les workflows de services linguistiques ; piloté la livraison IT des systèmes financiers et d’identité pour l’élargissement européen.
+Co-développé le programme d'architecture enterprise et la méthodologie BPM ; re-enginéeré, avec les équipes eGreffe, les systèmes documentaires pour la conformité au Traité de Lisbonne ; reconfiguré, avec DG Traduction, les workflows de services linguistiques ; piloté la livraison IT des systèmes financiers et d'identité pour l'élargissement européen.
 
 ---
 
 ### Architecte ERP & Responsable PMO IT | Parlement européen | Luxembourg/Bruxelles
 **Septembre 2002 – Décembre 2006**
 
-Conçu et mis en œuvre, avec les équipes RH, les systèmes de gestion du personnel sur la suite Oracle ERP ; co-construit avec la direction le PMO IT du Parlement : standards de gouvernance, méthodologies, livraison prévisible.
+Conçu et mis en œuvre, avec les équipes RH, les systèmes de gestion du personnel sur la suite Oracle ERP ; co-construit avec la direction le PMO IT du Parlement : standards de gouvernance, méthodologies, livraison prévisible.
 
 ---
 
@@ -143,14 +143,14 @@ Co-développé la méthodologie Model-Driven Architecture pour les systèmes dis
 ### Consultant technologie | Lagardère / Linagora | Paris
 **2000**
 
-Études de faisabilité et architecture technique pour l’adoption web enterprise ; gestion de plateformes Linux open source.
+Études de faisabilité et architecture technique pour l'adoption web enterprise ; gestion de plateformes Linux open source.
 
 ---
 
 ### Coordinateur de formation & Enseignant | Diverses organisations | France
 **1994 – 2000**
 
-Enseigné les mathématiques appliquées, statistiques, algorithmique et informatique à l’université pendant six ans. Rendre accessibles des concepts abstraits à des publics qui n’avaient pas choisi de les trouver intéressants est, rétrospectivement, une formation assez utile pour un architecte enterprise.
+Enseigné les mathématiques appliquées, statistiques, algorithmique et informatique à l'université pendant six ans. Rendre accessibles des concepts abstraits à des publics qui n'avaient pas choisi de les trouver intéressants est, rétrospectivement, une formation assez utile pour un architecte enterprise.
 
 ---
 
@@ -158,17 +158,17 @@ Enseigné les mathématiques appliquées, statistiques, algorithmique et informa
 
 **Certification Cloud & Outsourcing Officer** | House of Training & ABBL | Juin 2025  
 **Certification Programme Data Science & ML** | Paris Mines Tech | Novembre 2022 – Mars 2023  
-**Master en Technologies de l’Information et de la Communication** | INPL, Nancy | 1999 – 2000  
+**Master en Technologies de l'Information et de la Communication** | INPL, Nancy | 1999 – 2000  
 **Préparation doctorat en Mathématiques appliquées** | Université Nancy / INRIA | 1994 – 1996  
 *Comportement asymptotique des équations aux dérivées partielles*  
 **Master en Mathématiques appliquées (MIM)** | Université de Metz | 1993 – 1994  
-**Formations professionnelles :** PMI-CPMAI | Professional Scrum Master | PMP | TOGAF | PRINCE2 | ITIL | IIBA/BABOK
+**Formations professionnelles :** PMI-CPMAI | Professional Scrum Master | PMP | TOGAF | PRINCE2 | ITIL | IIBA/BABOK
 
 ---
 
 ## Reconnaissance & engagement
 
-Expert contributeur : « The Leader’s Guide to Radical Management » (Stephen Denning).  
+Expert contributeur : « The Leader's Guide to Radical Management » (Stephen Denning).  
 Co-fondateur, Luxembourg Business Analysis (LuxBA) et Enterprise Architecture (LuxEA) Communities of Practice.  
 Membre actif, PMI Luxembourg Chapter et Agile Luxembourg Community.
 
@@ -176,6 +176,6 @@ Membre actif, PMI Luxembourg Chapter et Agile Luxembourg Community.
 
 ## Langues
 
-**Français :** natif (C2) | **Anglais :** professionnel avancé (C1)  
-Je sollicite la dispense de deux des trois langues administratives prévue pour le groupe A1 dans les conditions d’admission du poste.  
-*L’usage de l’anglais dans les expériences et publications internationales est conforme aux pratiques du secteur GLAM (AI4LAM, LIBER, ICDAR, Impresso) et des institutions scientifiques luxembourgeoises.*
+**Français :** natif (C2) | **Anglais :** professionnel avancé (C1)  
+Je sollicite la dispense de deux des trois langues administratives prévue pour le groupe A1 dans les conditions d'admission du poste.  
+*L'usage de l'anglais dans les expériences et publications internationales est conforme aux pratiques du secteur GLAM (AI4LAM, LIBER, ICDAR, Impresso) et des institutions scientifiques luxembourgeoises.*
