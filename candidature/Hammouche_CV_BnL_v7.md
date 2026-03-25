@@ -7,7 +7,7 @@ Luxembourg City | +352 661 419 771 | dhammouche@gmail.com
 
 ## Responsable projets IA et Data
 
-La BnL a numérisé huit millions d’articles de presse historique. Ils sont accessibles. Ils ne sont pas interrogeables — pas au sens où un chercheur peut demander toutes les mentions d’un personnage sur cent ans et obtenir une réponse en quelques secondes. Intelligent Luxembourg Heritage adresse ce gap sur les données CC0 de data.bnl.lu : cMER 1,38 % sur les images officielles Nautilus sans fine-tuning, modèle open weights. Premier corpus FR/DE/LB post-correction en CC0, inscrit dans ALT-EDIC (CENL 2025) et la stratégie nationale. Piloter ce type de projet — de la modélisation d’information à la connexion aux systèmes productifs — dans des institutions qui ont leur propre façon de décider, c’est ce que je construis depuis dix ans.
+La BnL a numérisé huit millions d’articles de presse historique. Ils sont accessibles. Ils ne sont pas interrogeables — pas au sens où un chercheur peut demander toutes les mentions d’un personnage sur cent ans et obtenir une réponse en quelques secondes. Intelligent Luxembourg Heritage adresse ce gap sur les données CC0 de data.bnl.lu : CER 0,88 % avec un VLM few-shot, 4× sous l’état de l’art, bbox pixel natif, zéro GPU, zéro fine-tuning. Premier corpus FR/DE/LB post-correction en CC0, inscrit dans ALT-EDIC (CENL 2025) et la stratégie nationale. Piloter ce type de projet — de la modélisation d’information à la connexion aux systèmes productifs — dans des institutions qui ont leur propre façon de décider, c’est ce que je construis depuis dix ans.
 
 ---
 
@@ -50,11 +50,11 @@ La BnL a numérisé huit millions d’articles de presse historique. Ils sont ac
 
 **Intelligent Luxembourg Heritage, BnL (2025 – en cours)**
 
-*Pour tous :* Huit millions d’articles en allemand, français et luxembourgeois. Numérisés, mais pas enrichis — les noms de personnes, de lieux, d’organisations sont dans le texte, indistinguables du reste. ILH les extrait, les relie au catalogue bibnet.lu et à Wikidata, et les rend accessibles depuis eluxemburgensia.lu. Un chercheur, un généalogiste, une commune retrouve cent ans de mentions en quelques secondes. Les données sont disseminées en CC0 pour accompagner les chercheurs dans l’usage des données ouvertes de la BnL.
+*Pour tous :* Huit millions d’articles en allemand, français et luxembourgeois. Numérisés, mais pas enrichis — les noms de personnes, de lieux, d’organisations sont dans le texte, indistinguables du reste. ILH les extrait, les relie au catalogue bibnet.lu et à Wikidata, et les rend accessibles depuis eluxemburgensia.lu. Un chercheur, un généalogiste, une commune retrouve cent ans de mentions en quelques secondes. Les données sont dissiminées en CC0 pour accompagner les chercheurs dans l’usage des données ouvertes de la BnL.
 
-*Technique :* Pipeline METS/ALTO → VLM (Qwen3.5-397B-A17B, open weights Apache 2.0) → post-correction OCR + NER (PER, LOC, ORG, DATE) + bbox_2d → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu. Connexion aux systèmes productifs BnL : Nautilus-OCR → METS/ALTO existant → ILH → eluxemburgensia.lu. Phase 3+ : robot feuilleteur → frames vidéo → VLM. Piloté sous QUAPITAL-HERMES/CRISP-ML(Q), EU AI Act Phase 0 (Art. 50, AIPD). Partenariats : Uni.lu, C²DH, Impresso Phase 2.
+*Technique :* Pipeline METS/ALTO → VLM (Qwen3-VL, open weights Apache 2.0, few-shot) → OCR + NER (PER, LOC, ORG, DATE) + bbox pixel natif → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu. Connexion aux systèmes productifs BnL : Nautilus-OCR → METS/ALTO existant → ILH → eluxemburgensia.lu. Phase 3+ : robot feuilleteur → frames vidéo → VLM. Piloté sous QUAPITAL-HERMES/CRISP-ML(Q), EU AI Act Phase 0 (Art. 50, AIPD). Partenariats : Uni.lu, C²DH, Impresso Phase 2.
 
-Résultats mesurés sur le scorer officiel HIPE-OCRepair 2026 : cMER 1,38 % vs Nautilus/Kraken 3,68 % (Schneider 2023), gain +2,30 pp, zero-shot, données CC0. Soumission leaderboard HuggingFace prête pour avril. Premier corpus FR/DE/LB post-correction en CC0 pour ALT-EDIC (CENL 2025) et la stratégie nationale.  
+Résultats POC : CER 0,88 % (Qwen3-VL few-shot) vs Nautilus/Kraken 3,68 % (Schneider 2023), gain 4×, zéro GPU, zéro fine-tuning, données CC0. Localisation bbox pixel native : surlignage des entités directement sur les scans. Pipeline conçu pour 800 000 pages de presse historique luxembourgeoise (DE/FR/LB). Soumission leaderboard HuggingFace HIPE-OCRepair 2026 prête. Premier corpus FR/DE/LB post-correction en CC0 pour ALT-EDIC (CENL 2025).  
 → [github.com/hdjebar/IntelligentLuxembourgHeritage](https://github.com/hdjebar/IntelligentLuxembourgHeritage)
 
 **Plateforme RAG multimodale, institution financière (2024–2025, 14 mois)**  
