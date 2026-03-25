@@ -7,7 +7,7 @@ Luxembourg City | +352 661 419 771 | dhammouche@gmail.com
 
 ## Responsable projets IA et Data
 
-La BnL a numérisé huit millions d’articles de presse historique. Ils sont accessibles. Ils ne sont pas interrogeables — pas au sens où un chercheur peut demander toutes les mentions d’un personnage sur cent ans et obtenir une réponse en quelques secondes. Intelligent Luxembourg Heritage adresse ce gap sur les données CC0 de data.bnl.lu : cMER 1,38 % sur les images officielles Nautilus sans fine-tuning. Premier corpus FR/DE/LB post-correction en CC0, inscrit dans ALT-EDIC (CENL 2025) et la stratégie nationale. Piloter ce type de projet dans des institutions qui ont leur propre façon de décider — c’est ce que je construis depuis dix ans.
+La BnL a numérisé huit millions d’articles de presse historique. Ils sont accessibles. Ils ne sont pas interrogeables — pas au sens où un chercheur peut demander toutes les mentions d’un personnage sur cent ans et obtenir une réponse en quelques secondes. Intelligent Luxembourg Heritage adresse ce gap sur les données CC0 de data.bnl.lu : cMER 1,38 % sur les images officielles Nautilus sans fine-tuning, modèle open weights. Premier corpus FR/DE/LB post-correction en CC0, inscrit dans ALT-EDIC (CENL 2025) et la stratégie nationale. Piloter ce type de projet — de la modélisation d’information à la connexion aux systèmes productifs — dans des institutions qui ont leur propre façon de décider, c’est ce que je construis depuis dix ans.
 
 ---
 
@@ -50,11 +50,11 @@ La BnL a numérisé huit millions d’articles de presse historique. Ils sont ac
 
 **Intelligent Luxembourg Heritage, BnL (2025 – en cours)**
 
-*Pour tous :* Huit millions d’articles en allemand, français et luxembourgeois. Numérisés, mais pas enrichis — les noms de personnes, de lieux, d’organisations sont dans le texte, indistinguables du reste. ILH les extrait, les relie au catalogue bibnet.lu et à Wikidata, et les rend accessibles depuis eluxemburgensia.lu. Un chercheur, un généalogiste, une commune peut retrouver cent ans de mentions en quelques secondes.
+*Pour tous :* Huit millions d’articles en allemand, français et luxembourgeois. Numérisés, mais pas enrichis — les noms de personnes, de lieux, d’organisations sont dans le texte, indistinguables du reste. ILH les extrait, les relie au catalogue bibnet.lu et à Wikidata, et les rend accessibles depuis eluxemburgensia.lu. Un chercheur, un généalogiste, une commune retrouve cent ans de mentions en quelques secondes. Les données sont disseminées en CC0 pour accompagner les chercheurs dans l’usage des données ouvertes de la BnL.
 
-*Technique :* Pipeline METS/ALTO → VLM (Qwen3.5-397B-A17B) → post-correction OCR + NER (PER, LOC, ORG, DATE) + bbox_2d → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu. Phase 3+ : robot feuilleteur → frames vidéo → VLM (OT→IT). Piloté sous QUAPITAL-HERMES composé avec CRISP-ML(Q), EU AI Act traité en Phase 0 (Art. 50, model card, AIPD). Partenariats : Uni.lu, C²DH, Impresso Phase 2.
+*Technique :* Pipeline METS/ALTO → VLM (Qwen3.5-397B-A17B, open weights Apache 2.0) → post-correction OCR + NER (PER, LOC, ORG, DATE) + bbox_2d → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu. Connexion aux systèmes productifs BnL : Nautilus-OCR → METS/ALTO existant → ILH → eluxemburgensia.lu. Phase 3+ : robot feuilleteur → frames vidéo → VLM. Piloté sous QUAPITAL-HERMES/CRISP-ML(Q), EU AI Act Phase 0 (Art. 50, AIPD). Partenariats : Uni.lu, C²DH, Impresso Phase 2.
 
-Résultats mesurés sur le scorer officiel HIPE-OCRepair 2026 : cMER 1,38 % vs Nautilus/Kraken 3,68 % (Schneider 2023), gain +2,30 pp, zero-shot, données CC0. Soumission leaderboard HuggingFace prête pour la phase d’évaluation du 6 au 8 avril. Premier corpus FR/DE/LB post-correction en CC0 pour ALT-EDIC (CENL 2025) et la stratégie nationale.  
+Résultats mesurés sur le scorer officiel HIPE-OCRepair 2026 : cMER 1,38 % vs Nautilus/Kraken 3,68 % (Schneider 2023), gain +2,30 pp, zero-shot, données CC0. Soumission leaderboard HuggingFace prête pour avril. Premier corpus FR/DE/LB post-correction en CC0 pour ALT-EDIC (CENL 2025) et la stratégie nationale.  
 → [github.com/hdjebar/IntelligentLuxembourgHeritage](https://github.com/hdjebar/IntelligentLuxembourgHeritage)
 
 **Plateforme RAG multimodale, institution financière (2024–2025, 14 mois)**  
@@ -64,7 +64,7 @@ Co-construit avec les équipes métier et IT une plateforme de recherche sémant
 Bâti avec une équipe d’architectes enterprise une plateforme GraphRAG couplant LangChain, bases vectorielles et standards ArchiMate. Les architectes interrogent en langage naturel une documentation technique qui restait dans des silos inaccessibles en temps réel. Même défi qu’eluxemburgensia.lu : rendre cherchable ce qui ne l’est pas.
 
 **Système d’analyse prédictive en santé, Agence de la Biomédecine, France (2022–2023)**  
-Développé avec les équipes médicales des algorithmes de scoring ML pour l’allocation de greffons hépatiques. De la préparation des données à la validation clinique, avec les cliniciens à chaque étape — ce qui signifie que le système a été adopté, pas seulement livré.
+Développé avec les équipes médicales des algorithmes de scoring ML pour l’allocation de greffons hépatiques. De la préparation des données à la validation clinique, avec les cliniciens à chaque étape — ce qui exige d’expliquer des concepts complexes à des interlocuteurs non techniques et que le système soit adopté, pas seulement livré.
 
 **Développement de skills Claude AI (2024–2025)**  
 *ai-methodologies* : CRISP-DM, CRISP-ML(Q), LLMOps, EU AI Act. *enterprise-architecture* : 50+ frameworks (ArchiMate, BPMN, TOGAF, sécurité, MLOps). *eu-ai-act-compliance* : classification des risques, obligations GPAI, conformité Art. 9-15.
@@ -128,7 +128,7 @@ Co-développé le programme d’architecture enterprise et la méthodologie BPM�
 ### Architecte ERP & Responsable PMO IT | Parlement européen | Luxembourg/Bruxelles
 **Septembre 2002 – Décembre 2006**
 
-Conçu et mis en œuvre avec les équipes RH les systèmes de gestion du personnel sur la suite Oracle ERP ; co-construit avec la direction le PMO IT du Parlement : standards de gouvernance, méthodologies, livraison prévisible.
+Conçu et mis en œuvre avec les équipes RH les systèmes de gestion du personnel sur la suite Oracle ERP ; co-construit avec la direction le PMO IT du Parlement : standards de gouvernance, méthodologies, livraison prévisible, au service de l’institution et de son bien commun.
 
 ---
 
@@ -143,13 +143,6 @@ Co-développé la méthodologie Model-Driven Architecture pour les systèmes dis
 **2000**
 
 Études de faisabilité et architecture technique pour l’adoption web enterprise ; gestion de plateformes Linux open source.
-
----
-
-### Coordinateur de formation & Enseignant | Diverses organisations | France
-**1994 – 2000**
-
-Enseigné les mathématiques appliquées, statistiques, algorithmique et informatique à l’université pendant six ans. Rendre accessibles des concepts abstraits à des publics qui n’avaient pas choisi de les trouver intéressants est, rétrospectivement, une formation assez utile pour un architecte enterprise.
 
 ---
 
