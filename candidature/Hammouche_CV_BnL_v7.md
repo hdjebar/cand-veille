@@ -7,7 +7,7 @@ Luxembourg City | +352 661 419 771 | dhammouche@gmail.com
 
 ## Responsable projets IA et Data
 
-La BnL a numérisé huit millions d’articles de presse historique. Ils sont accessibles. Ils ne sont pas interrogeables. Intelligent Luxembourg Heritage adresse ce gap sur les données CC0 de data.bnl.lu : CER 0,88 % avec un VLM few-shot, 4× sous l’état de l’art, sans GPU, sans fine-tuning. Le corpus BnL devient l’avantage architectural : chaque lot de données CC0 nourrit le cycle d’amélioration suivant. Premier corpus luxembourgeois dans le secteur bibliothèques, archives et musées. Piloter ce type de projet, de la modélisation d’information à la connexion aux systèmes productifs, dans des institutions qui ont leur propre façon de décider, c’est ce que je construis depuis dix ans.
+La BnL a numérisé huit millions d’articles de presse historique luxembourgeoise, lisibles depuis eluxemburgensia.lu, mais dont les personnes, lieux et organisations ne sont pas encore interrogeables : le projet Impresso a construit ces capacités sur le corpus BnL, mais elles restent sur une infrastructure de recherche, non intégrées aux services en production. Le POC Intelligent Luxembourg Heritage, développé sur les données ouvertes CC0 de data.bnl.lu, atteint un CER de 0,88 % (4× sous l’état de l’art) avec un modèle VLM few-shot, sans GPU, sans fine-tuning, pipeline NER complet validé de bout en bout. L’objectif : intégrer ce pipeline dans l’infrastructure BnL existante et rendre les huit millions d’articles vraiment interrogeables depuis eluxemburgensia.lu, pour les chercheurs, les généalogistes, et tous ceux qui cherchent une trace dans les journaux de 1900.
 
 ---
 
