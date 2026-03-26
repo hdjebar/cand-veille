@@ -23,7 +23,7 @@ C’est là que mon parcours est directement utile. Commission européenne, Parl
 
 Intelligent Luxembourg Heritage part de là. Sur les données de référence de la BnL, le prototype atteint une précision quatre fois supérieure au système OCR actuellement en production — avec un modèle VLM (Vision Language Model : un modèle d’IA capable de « lire » et de raisonner sur des images), sans infrastructure dédiée, sans phase d’entraînement. Les noms de personnes, de lieux et d’organisations extraits des journaux anciens sont localisés avec précision dans les scans, ce qui permettra de les surligner directement à l’écran. Entièrement basé sur les données ouvertes CC0 de data.bnl.lu, conçu pour s’intégrer dans l’infrastructure existante, gouvernance formalisée et EU AI Act dès la conception.
 
-Ce travail pourra vous être présenté lors de l’entretien, notamment comme exemple concret de projet piloté sous QUAPITAL-HERMES avec trois portes de décision formelles.
+Ce travail pourra vous être présenté lors de l’entretien, notamment comme exemple concret de projet IA/Data piloté sous QUAPITAL-HERMES avec trois jalons de décision formels.
 
 En tant qu’établissement public recrutant sur un emploi nouveau en CDI, la BnL est éligible au dispositif d’emploi d’insertion (art. L.541-5 du Code du travail) : le Fonds pour l’emploi rembourse 100 % des frais salariaux jusqu’à la retraite, plafonnés à 150 % du SSM, soit actuellement 4 055 €/mois. La démarche appartient à la BnL, en amont de la signature du contrat.
 
