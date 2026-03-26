@@ -42,15 +42,15 @@ La BnL a numérisé huit millions d’articles de presse historique. Ils sont ac
 
 > **Proposition de projet – Intelligent Luxembourg Heritage**
 >
-> La BnL a numérisé huit millions d’articles de presse historique luxembourgeoise (1840 à nos jours, DE/FR/LB). Ces textes sont accessibles ; les entités qu’ils contiennent (personnes, lieux, organisations, événements) ne le sont pas. Aucun chercheur ne peut aujourd’hui demander « toutes les mentions de tel personnage entre 1900 et 1914 » et obtenir une réponse en quelques secondes.
+> La BnL a numérisé huit millions d’articles de presse historique luxembourgeoise (1840 à nos jours, DE/FR/LB). Ces textes sont accessibles ; les entités qu’ils contiennent (personnes, lieux, organisations, événements) ne sont pas encore interrogeables depuis eluxemburgensia.lu. Le projet Impresso a construit ces capacités NER sur le corpus BnL, mais elles restent sur une infrastructure de recherche distincte, non intégrée aux services en production. ILH comble ce gap : pipeline de production, données CC0, identifié priorité 1 parmi six cas d’usage via l’AI Value Framework. POC validé sur les images de référence Nautilus-OCR.
 >
-> ILH construit le pipeline qui comble ce gap : extraire automatiquement ces entités, les relier au catalogue bibnet.lu et à Wikidata, et les rendre interrogeables depuis eluxemburgensia.lu. La preuve de concept a été développée sur les données ouvertes CC0 de data.bnl.lu et validée sur les mêmes images de référence que la baseline officielle Nautilus-OCR.
+> ILH construit le pipeline qui intègre ces capacités dans l’infrastructure existante de la BnL : extraire automatiquement les entités, les relier au catalogue bibnet.lu et à Wikidata, et les rendre interrogeables depuis eluxemburgensia.lu. La preuve de concept a été développée sur les données ouvertes CC0 de data.bnl.lu et validée sur les mêmes images de référence que la baseline officielle Nautilus-OCR.
 
 ---
 
 **Intelligent Luxembourg Heritage, BnL (2025 – en cours)**
 
-*Pour tous :* Huit millions d’articles en allemand, français et luxembourgeois. Numérisés, mais pas enrichis : les noms de personnes, de lieux, d’organisations sont dans le texte, indistinguables du reste. ILH les extrait, les relie au catalogue bibnet.lu et à Wikidata, et les rend accessibles depuis eluxemburgensia.lu. Un chercheur, un généalogiste, une commune retrouve cent ans de mentions en quelques secondes. Les données sont disséminées en CC0 pour accompagner les chercheurs dans l’usage des données ouvertes de la BnL.
+*Impact :* Un chercheur, un généalogiste, une commune peut retrouver cent ans de mentions d’un personnage, d’un lieu ou d’une organisation en quelques secondes depuis eluxemburgensia.lu. Les entités extraites sont liées au catalogue bibnet.lu et à Wikidata. Les données sont disséminées en CC0 pour accompagner les chercheurs dans l’usage des données ouvertes de la BnL.
 
 *Technique :* Pipeline METS/ALTO → VLM (Qwen3-VL, open weights Apache 2.0, few-shot) → OCR + NER (PER, LOC, ORG, DATE) + bbox pixel natif → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu. Connexion aux systèmes productifs BnL : Nautilus-OCR → METS/ALTO existant → ILH → eluxemburgensia.lu. Phase 3+ : robot feuilleteur → frames vidéo → VLM. Piloté sous QUAPITAL-HERMES/CRISP-ML(Q), conformité EU AI Act dès la conception (Art. 50, AIPD). Partenariats : Uni.lu, C²DH, Impresso Phase 2.
 
