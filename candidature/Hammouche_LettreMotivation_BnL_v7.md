@@ -17,7 +17,7 @@ L-2450 Luxembourg
 
 Madame, Monsieur,
 
-En décembre 2025, la BnL a signé le MoU AI4LAM à la British Library. Dix-sept projets IA livrés. Le programme 2025-2028 engage l’institution à renforcer et pérenniser ces activités, tout en explorant de nouveaux champs d’application : moins les collections comme fin en soi, plus les usagers qui en ont besoin. Ce changement engage des bibliothécaires qui ont construit leurs pratiques sur des années. Faire tenir ce type de transition, c’est différent de la lancer.
+La BnL construit sa bibliothèque numérique depuis plus de vingt ans. Nautilus-OCR, eluxemburgensia.lu, le chatbot patrimonial présenté au Ministre de la Culture en octobre 2023 : chaque étape a rendu les collections plus accessibles. Le programme 2025-2028 et le MoU AI4LAM signé à la British Library poursuivent cette logique, avec une ambition nouvelle : rendre les collections vraiment utilisables, pas seulement consultables. Ce pas en avant engage des bibliothécaires dont les pratiques ont été construites dans la durée. Accompagner cette transition sans la brusquer, c’est ce qui fait la différence entre un projet qui dure et un projet qui démarre.
 
 C’est là que mon parcours est directement utile. Commission européenne, Parlement européen, Société Générale Luxembourg. Dans chaque contexte, le même constat : ce qui tombe en déshérence, ce ne sont pas les systèmes mal conçus ; ce sont ceux livrés sans avoir gagné l’adhésion des équipes et géré leurs résistances. J’ai appris à expliquer des concepts complexes à des interlocuteurs non techniques, à négocier plutôt qu’à imposer, et à traiter l’EU AI Act en Phase 0.
 
@@ -29,7 +29,7 @@ En tant qu’établissement public recrutant sur un emploi nouveau en CDI, la Bn
 
 Je sollicite la dispense de deux des trois langues administratives prévue pour le groupe A1 dans les conditions d’admission du poste.
 
-Mon entrée dans les collections passe par les outils en production à la BnL : formats de description des numérisations, identifiants pérennes, Alma. J’ai appris à lire ce type de référentiel avant de proposer une architecture, notamment à STATEC avec les standards statistiques européens, à la Commission avec les systèmes documentaires du Traité de Lisbonne. Les institutions patrimoniales ont leur propre langage ; je l’ai déjà appris une fois. Ce que les équipes BnL ont bâti en huit mois à mi-temps (un chatbot devenu référence nationale) dit quelque chose sur leur façon de travailler pour le bien commun. C’est avec elles que je veux construire la suite : faire que les huit millions d’articles de la presse historique luxembourgeoise soient vraiment interrogeables, pour les chercheurs, les généalogistes, et tous ceux qui cherchent une trace dans les journaux de 1900.
+Mon entrée dans les collections passe par les outils en production à la BnL : formats de description des numérisations, identifiants pérennes, Alma. J’ai appris à lire ce type de référentiel avant de proposer une architecture, notamment à STATEC avec les standards statistiques européens, à la Commission avec les systèmes documentaires du Traité de Lisbonne. Les institutions patrimoniales ont leur propre langage ; je l’ai déjà appris une fois. Ce que les équipes BnL ont bâti en huit mois à mi-temps (un chatbot devenu référence nationale) dit quelque chose sur leur façon de travailler. C’est avec elles que je veux construire la suite.
 
 Je me tiens à votre disposition pour un entretien.
 
