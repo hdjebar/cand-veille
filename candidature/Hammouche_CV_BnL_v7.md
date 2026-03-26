@@ -54,7 +54,7 @@ La BnL a numérisé huit millions d’articles de presse historique. Ils sont ac
 
 *Technique :* Pipeline METS/ALTO → VLM (Qwen3-VL, open weights Apache 2.0, few-shot) → OCR + NER (PER, LOC, ORG, DATE) + bbox pixel natif → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu. Connexion aux systèmes productifs BnL : Nautilus-OCR → METS/ALTO existant → ILH → eluxemburgensia.lu. Phase 3+ : robot feuilleteur → frames vidéo → VLM. Piloté sous QUAPITAL-HERMES/CRISP-ML(Q), conformité EU AI Act dès la conception (Art. 50, AIPD). Partenariats : Uni.lu, C²DH, Impresso Phase 2.
 
-Résultats POC : CER 0,88 % (Qwen3-VL few-shot) vs 3,68 % Nautilus/Kraken fine-tuné (Schneider 2023), gain 4×, sans GPU, sans fine-tuning. Localisation bbox pixel natif pour surlignage dans les scans. Pipeline conçu pour 800 000 pages. Soumission leaderboard HuggingFace HIPE-OCRepair 2026 prête. Premier corpus FR/DE/LB CC0 pour ALT-EDIC (CENL 2025).  
+Résultats POC : CER 0,88 % (Qwen3-VL few-shot) vs 3,68 % Nautilus/Kraken fine-tuné (Schneider 2023), gain 4×, sans GPU, sans fine-tuning. Pipeline NER complet validé de bout en bout : transcription, reconnaissance d’entités (PER, LOC, ORG, DATE) et grounding pixel de chaque entité, IoU 0,384 sur les blocs de référence. Économie validée : 1 702 blocs CC0 traités pour ∼2 $, soit une extrapolation directe aux 800 000 pages BnL. Soumission leaderboard HuggingFace HIPE-OCRepair 2026 prête. Premier corpus FR/DE/LB CC0 pour ALT-EDIC (CENL 2025).  
 → [github.com/hdjebar/IntelligentLuxembourgHeritage](https://github.com/hdjebar/IntelligentLuxembourgHeritage)
 
 **Plateforme RAG multimodale, institution financière (2024–2025, 14 mois)**  
