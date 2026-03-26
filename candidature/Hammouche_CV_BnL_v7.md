@@ -65,8 +65,8 @@ Bâti avec une équipe d’architectes enterprise une plateforme GraphRAG coupla
 **Système d’analyse prédictive en santé, Agence de la Biomédecine, France (2022–2023)**  
 Développé avec les équipes médicales des algorithmes de scoring ML pour l’allocation de greffons hépatiques. De la préparation des données à la validation clinique, avec les cliniciens à chaque étape, ce qui exige d’expliquer des concepts complexes à des interlocuteurs non techniques et que le système soit adopté, pas seulement livré.
 
-**Développement de skills Claude AI (2024–2025)**  
-*ai-methodologies* : CRISP-DM, CRISP-ML(Q), LLMOps, EU AI Act. *enterprise-architecture* : 50+ frameworks (ArchiMate, BPMN, TOGAF, sécurité, MLOps). *eu-ai-act-compliance* : classification des risques, obligations GPAI, conformité Art. 9-15.
+**Veille technologique & outils IA (2024–2025)**  
+Veille active des méthodes IA dans le secteur bibliothèques, archives et musées : AI4LAM (IFLA/CENL), LIBER, Impresso Phase 2 (C²DH/EPFL), benchmark HIPE-OCRepair 2026 (ICDAR), ALT-EDIC (CENL 2025). Contribution open source : ai-methodologies (CRISP-ML(Q), LLMOps, EU AI Act), enterprise-architecture (50+ frameworks, ArchiMate, TOGAF, MLOps), eu-ai-act-compliance (Art. 9-15, obligations GPAI).
 
 ---
 
@@ -169,4 +169,4 @@ Membre actif, PMI Luxembourg Chapter et Agile Luxembourg Community.
 
 **Français :** natif (C2) | **Anglais :** professionnel avancé (C1)  
 Je sollicite la dispense de deux des trois langues administratives prévue pour le groupe A1 dans les conditions d’admission du poste.  
-*L’usage de l’anglais dans les expériences et publications internationales est conforme aux pratiques du secteur GLAM (AI4LAM, LIBER, ICDAR, Impresso) et des institutions scientifiques luxembourgeoises.*
+*L’usage de l’anglais dans les expériences et publications internationales est conforme aux pratiques des institutions scientifiques luxembourgeoises.*
