@@ -7,7 +7,7 @@ Luxembourg City | +352 661 419 771 | dhammouche@gmail.com
 
 ## Responsable projets IA et Data
 
-La BnL a numérisé huit millions d’articles de presse historique. Ils sont accessibles. Ils ne sont pas interrogeables. Intelligent Luxembourg Heritage adresse ce gap sur les données CC0 de data.bnl.lu : CER 0,88 % avec un VLM few-shot, 4× sous l’état de l’art, zéro GPU, zéro fine-tuning, bbox pixel natif. Le few-shot structure un cycle d’auto-amélioration complet — de l’oracle SFT à la récompense GRPO — où les 1 702 blocs annotés BnL deviennent un avantage architectural. Piloter ce type de projet — de la modélisation d’information à la connexion aux systèmes productifs — dans des institutions qui ont leur propre façon de décider, c’est ce que je construis depuis dix ans.
+La BnL a numérisé huit millions d’articles de presse historique. Ils sont accessibles. Ils ne sont pas interrogeables. Intelligent Luxembourg Heritage adresse ce gap sur les données CC0 de data.bnl.lu : CER 0,88 % avec un VLM few-shot, 4× sous l’état de l’art, sans GPU, sans fine-tuning. Le corpus BnL devient l’avantage architectural : chaque lot de données CC0 nourrit le cycle d’amélioration suivant. Premier corpus luxembourgeois dans le secteur bibliothèques, archives et musées. Piloter ce type de projet, de la modélisation d’information à la connexion aux systèmes productifs, dans des institutions qui ont leur propre façon de décider, c’est ce que je construis depuis dix ans.
 
 ---
 
@@ -42,7 +42,7 @@ La BnL a numérisé huit millions d’articles de presse historique. Ils sont ac
 
 > **Proposition de projet – Intelligent Luxembourg Heritage**
 >
-> La BnL a numérisé huit millions d’articles de presse historique luxembourgeoise (1840 à nos jours, DE/FR/LB). Ces textes sont accessibles ; les entités qu’ils contiennent — personnes, lieux, organisations, événements — ne le sont pas. Aucun chercheur ne peut aujourd’hui demander « toutes les mentions de tel personnage entre 1900 et 1914 » et obtenir une réponse en quelques secondes.
+> La BnL a numérisé huit millions d’articles de presse historique luxembourgeoise (1840 à nos jours, DE/FR/LB). Ces textes sont accessibles ; les entités qu’ils contiennent (personnes, lieux, organisations, événements) ne le sont pas. Aucun chercheur ne peut aujourd’hui demander « toutes les mentions de tel personnage entre 1900 et 1914 » et obtenir une réponse en quelques secondes.
 >
 > ILH construit le pipeline qui comble ce gap : extraire automatiquement ces entités, les relier au catalogue bibnet.lu et à Wikidata, et les rendre interrogeables depuis eluxemburgensia.lu. La preuve de concept a été développée sur les données ouvertes CC0 de data.bnl.lu et validée sur les mêmes images de référence que la baseline officielle Nautilus-OCR.
 
@@ -50,11 +50,11 @@ La BnL a numérisé huit millions d’articles de presse historique. Ils sont ac
 
 **Intelligent Luxembourg Heritage, BnL (2025 – en cours)**
 
-*Pour tous :* Huit millions d’articles en allemand, français et luxembourgeois. Numérisés, mais pas enrichis — les noms de personnes, de lieux, d’organisations sont dans le texte, indistinguables du reste. ILH les extrait, les relie au catalogue bibnet.lu et à Wikidata, et les rend accessibles depuis eluxemburgensia.lu. Un chercheur, un généalogiste, une commune retrouve cent ans de mentions en quelques secondes. Les données sont dissiminées en CC0 pour accompagner les chercheurs dans l’usage des données ouvertes de la BnL.
+*Pour tous :* Huit millions d’articles en allemand, français et luxembourgeois. Numérisés, mais pas enrichis : les noms de personnes, de lieux, d’organisations sont dans le texte, indistinguables du reste. ILH les extrait, les relie au catalogue bibnet.lu et à Wikidata, et les rend accessibles depuis eluxemburgensia.lu. Un chercheur, un généalogiste, une commune retrouve cent ans de mentions en quelques secondes. Les données sont disséminées en CC0 pour accompagner les chercheurs dans l’usage des données ouvertes de la BnL.
 
-*Technique :* Pipeline METS/ALTO → VLM (Qwen3-VL, open weights Apache 2.0, few-shot) → OCR + NER (PER, LOC, ORG, DATE) + bbox pixel natif → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu. Connexion aux systèmes productifs BnL : Nautilus-OCR → METS/ALTO existant → ILH → eluxemburgensia.lu. Phase 3+ : robot feuilleteur → frames vidéo → VLM. Piloté sous QUAPITAL-HERMES/CRISP-ML(Q), EU AI Act Phase 0 (Art. 50, AIPD). Partenariats : Uni.lu, C²DH, Impresso Phase 2.
+*Technique :* Pipeline METS/ALTO → VLM (Qwen3-VL, open weights Apache 2.0, few-shot) → OCR + NER (PER, LOC, ORG, DATE) + bbox pixel natif → entity linking Wikidata/ARK (NAAN 70795) → knowledge graph bibnet.lu. Connexion aux systèmes productifs BnL : Nautilus-OCR → METS/ALTO existant → ILH → eluxemburgensia.lu. Phase 3+ : robot feuilleteur → frames vidéo → VLM. Piloté sous QUAPITAL-HERMES/CRISP-ML(Q), conformité EU AI Act dès la conception (Art. 50, AIPD). Partenariats : Uni.lu, C²DH, Impresso Phase 2.
 
-Résultats POC : CER 0,88 % (Qwen3-VL few-shot) vs 3,54 % zero-shot et 3,68 % Nautilus/Kraken fine-tuné (Schneider 2023) — gain 4×, zéro GPU, zéro fine-tuning, bbox pixel natif. Cycle d’auto-amélioration : le few-shot filtre les données SFT en rejetant les exemples bruités, amorce le QLoRA sur signal propre, synthétise des paires d’entraînement sans annotation humaine depuis les 10 880 pages de L’Union (1860–1869, CC0 BnL), et définit la récompense de référence pour le raffinement GRPO CER+IoU. Pool few-shot : Ground Truth Pack (33 000 lignes, 99,95 %, double-keying) · Sample Pack (11 titres DE/FR, 1845–1877, diversité typographique) · D’Wäschfra 1868 (lb XIXe, orthographe Dicks/Sprenger). Pipeline conçu pour 800 000 pages. Soumission leaderboard HuggingFace HIPE-OCRepair 2026 prête. Premier corpus FR/DE/LB CC0 pour ALT-EDIC (CENL 2025).  
+Résultats POC : CER 0,88 % (Qwen3-VL few-shot) vs 3,68 % Nautilus/Kraken fine-tuné (Schneider 2023), gain 4×, sans GPU, sans fine-tuning. Localisation bbox pixel natif pour surlignage dans les scans. Pipeline conçu pour 800 000 pages. Soumission leaderboard HuggingFace HIPE-OCRepair 2026 prête. Premier corpus FR/DE/LB CC0 pour ALT-EDIC (CENL 2025).  
 → [github.com/hdjebar/IntelligentLuxembourgHeritage](https://github.com/hdjebar/IntelligentLuxembourgHeritage)
 
 **Plateforme RAG multimodale, institution financière (2024–2025, 14 mois)**  
@@ -64,7 +64,7 @@ Co-construit avec les équipes métier et IT une plateforme de recherche sémant
 Bâti avec une équipe d’architectes enterprise une plateforme GraphRAG couplant LangChain, bases vectorielles et standards ArchiMate. Les architectes interrogent en langage naturel une documentation technique qui restait dans des silos inaccessibles en temps réel. Même défi qu’eluxemburgensia.lu : rendre cherchable ce qui ne l’est pas.
 
 **Système d’analyse prédictive en santé, Agence de la Biomédecine, France (2022–2023)**  
-Développé avec les équipes médicales des algorithmes de scoring ML pour l’allocation de greffons hépatiques. De la préparation des données à la validation clinique, avec les cliniciens à chaque étape — ce qui exige d’expliquer des concepts complexes à des interlocuteurs non techniques et que le système soit adopté, pas seulement livré.
+Développé avec les équipes médicales des algorithmes de scoring ML pour l’allocation de greffons hépatiques. De la préparation des données à la validation clinique, avec les cliniciens à chaque étape, ce qui exige d’expliquer des concepts complexes à des interlocuteurs non techniques et que le système soit adopté, pas seulement livré.
 
 **Développement de skills Claude AI (2024–2025)**  
 *ai-methodologies* : CRISP-DM, CRISP-ML(Q), LLMOps, EU AI Act. *enterprise-architecture* : 50+ frameworks (ArchiMate, BPMN, TOGAF, sécurité, MLOps). *eu-ai-act-compliance* : classification des risques, obligations GPAI, conformité Art. 9-15.
@@ -76,21 +76,21 @@ Développé avec les équipes médicales des algorithmes de scoring ML pour l’
 
 *Architecture sur quatre juridictions : Luxembourg, Paris, Suisse, Monaco.*
 
-Quatre juridictions — autant de façons différentes de résister. Co-construit une stratégie cloud conforme CSSF avec les parties prenantes réglementaires. Déployé des standards enterprise pour le management des API et la sécurité. Traduit des décisions architecturales en programmes de changement que les équipes ont réellement adoptés.
+Quatre juridictions, autant de façons différentes de résister. Co-construit une stratégie cloud conforme CSSF avec les parties prenantes réglementaires. Déployé des standards enterprise pour le management des API et la sécurité. Traduit des décisions architecturales en programmes de changement que les équipes ont réellement adoptés.
 
 ---
 
 ### Programme Data Science avancée | Paris Mines Tech | Paris
 **Novembre 2022 – Mars 2023**
 
-Programme exécutif intensif : machine learning avancé, deep learning, big data, IA en santé numérique. Livré un système speech-to-text ML de bout en bout ; hackathons santé avec fine-tuning et évaluation sur données contraintes.
+Programme exécutif intensif : machine learning avancé, deep learning, big data, IA en santé numérique. Livré un système speech-to-text ML de bout en bout.
 
 ---
 
 ### Architecte d’entreprise | KPMG Luxembourg | Luxembourg
 **Décembre 2021 – Octobre 2022**
 
-Co-construit avec la direction la pratique EA interne ; automatisé les opérations de données ServiceNow via PowerShell ; co-défini les frameworks de gouvernance Microsoft Power Platform ; architecturé les capacités d’analytics cloud pour une BI quasi-temps réel.
+Co-construit avec la direction la pratique EA interne. Automatisé les opérations ServiceNow. Co-défini les frameworks de gouvernance Microsoft Power Platform.
 
 ---
 
@@ -99,22 +99,22 @@ Co-construit avec la direction la pratique EA interne ; automatisé les opérat
 
 *Missions multi-secteurs : gouvernement, pharma, services financiers, emploi.*
 
-- **Agence de paiement wallonne :** reconfiguré l’architecture enterprise de bout en bout avec les équipes métier : délais de traitement réduits de semaines à jours ; référentiel EA dans ArchiMate/Sparx EA ; reporting batch remplacé par une BI temps réel.
-- Piloté des projets pluridisciplinaires sur BPM, gouvernance des données, migration cloud et IAM ; chacun livré dans le périmètre, le planning et le budget convenus.
+- **Agence de paiement wallonne :** reconfiguré l’architecture enterprise de bout en bout : délais réduits de semaines à jours, BI temps réel.
+- Piloté des projets pluridisciplinaires BPM, données, cloud et IAM dans le périmètre, le planning et le budget convenus.
 
 ---
 
 ### Architecte BPM d’entreprise | STATEC | Luxembourg
 **Octobre 2014 – Février 2015**
 
-Bâti la démarche EA et BPM alignée sur les standards statistiques européens (ESS, GSBPM, GAMSO, CEAF). Échanges avec Eurostat via SDMX — le même type de format structuré que les METS/ALTO et OAI-PMH de la BnL.
+Bâti la démarche EA et BPM alignée sur les standards statistiques européens (ESS, GSBPM, GAMSO, CEAF). Échanges avec Eurostat via SDMX, le même type de format structuré que les METS/ALTO et OAI-PMH de la BnL.
 
 ---
 
 ### Consultant IT | COPROCESS SA | Luxembourg
 **Janvier 2012 – Septembre 2014**
 
-Audits IT, transformation enterprise, optimisation processus santé (approche TLS) ; restructuration de flux physiques : logistique de distribution, gestion de magasinage, automatisation d’entrepôt. Co-fondé LuxBA et LuxEA, les deux communautés de pratique luxembourgeoises en analyse métier et architecture d’entreprise.
+Audits IT, transformation enterprise, optimisation processus (TLS). Restructuration de flux physiques : logistique de distribution, magasinage, automatisation d’entrepôt. Co-fondé LuxBA et LuxEA.
 
 ---
 
